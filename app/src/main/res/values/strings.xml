@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">iPhone Wallz</string>
+    <string name="title" translatable="false">iPhone Wallz</string>
+    <string name="api_url_u_splash" translatable="false">ZcN65wB4Qh5Xx94H8-zL101bgm8ZU65z2hfycJ7wOPk</string>
+    <string name="backup_api_url" translatable="false">NpbKgyo2vc7Wa1tPQKiykBGwqt1HYISLpPT7Y0iQrlQ</string>
+
+</resources>

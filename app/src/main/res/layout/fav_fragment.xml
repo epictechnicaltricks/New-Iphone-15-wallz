@@ -1,0 +1,128 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:background="@color/bg_color"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<LinearLayout
+
+			android:orientation="vertical"
+			android:id="@+id/bg"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_horizontal"
+
+			android:layout_gravity="center_vertical">
+
+
+
+			<LinearLayout
+
+				android:clipToPadding="true"
+				android:paddingTop="30dp"
+				android:background="@color/bottom_navigation_color"
+				android:alpha="0.85"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+				<TextView
+
+					android:fontFamily="@font/dmsansbold"
+					android:id="@+id/title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dp"
+					android:layout_marginTop="15dp"
+					android:layout_gravity="start"
+					android:paddingTop="8dp"
+					android:paddingStart="8dp"
+					android:text="Favourites"
+					android:textSize="30sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+
+				<TextView
+					android:visibility="visible"
+					android:paddingTop="20dp"
+					android:textSize="14dp"
+					android:fontFamily="@font/dmsansbold"
+					android:paddingRight="30dp"
+					android:gravity="right"
+					android:id="@+id/refresh2"
+					android:textColor="#A16FFB"
+					android:text="Tap to Refresh"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+				</TextView>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:gravity="center"
+				android:id="@+id/progress"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<com.airbnb.lottie.LottieAnimationView
+					android:scaleX="1.1"
+					android:scaleY="1.1"
+					android:layout_width="match_parent"
+					android:layout_height="280dp"
+					app:lottie_rawRes="@raw/cat_d"
+					app:lottie_autoPlay="true"
+					app:lottie_loop="true"/>
+
+
+				<TextView
+android:layout_marginBottom="30dp"
+					android:alpha="0.8"
+					android:id="@+id/msg"
+					android:layout_marginTop="13dp"
+					android:textColor="#fff"
+					android:fontFamily="@font/dmsansmedium"
+					android:gravity="center"
+					android:textSize="20sp"
+					android:text="No Favs! Only me.."
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+
+
+
+			</LinearLayout>
+
+			<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+				android:id="@+id/refresh"
+
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerview1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:clipToPadding="false"
+					android:paddingLeft="10dp"
+
+					android:paddingRight="10dp"
+					android:paddingBottom="90dp"
+
+					android:scrollbars="none" />
+			</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+		</LinearLayout>
+
+
+	</RelativeLayout>
+
+
+</LinearLayout>

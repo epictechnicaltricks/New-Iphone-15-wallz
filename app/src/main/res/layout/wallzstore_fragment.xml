@@ -1,0 +1,334 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/bg_color"
+		android:orientation="vertical">
+
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+			<LinearLayout
+				android:gravity="center"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				<LinearLayout
+
+					android:gravity="center"
+					android:layout_gravity="center"
+					android:orientation="vertical"
+					android:id="@+id/message_layout"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<com.airbnb.lottie.LottieAnimationView
+						android:scaleX="1.3"
+						android:scaleY="1.3"
+						android:id="@+id/animationView"
+						android:layout_width="match_parent"
+						android:layout_height="290dp"
+						app:lottie_rawRes="@raw/no_internet_ani"
+						app:lottie_autoPlay="true"
+						app:lottie_loop="true"/>
+
+					<TextView
+						android:id="@+id/msg"
+						android:layout_marginTop="0dp"
+						android:textColor="#fff"
+						android:fontFamily="@font/dmsansmedium"
+						android:gravity="center"
+						android:textSize="20sp"
+						android:text="Message"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+
+					</TextView>
+
+					<Button
+						android:id="@+id/reload_btn"
+
+						android:shadowColor="@color/bottom_nav_color_active"
+						android:layout_marginTop="10dp"
+						android:layout_gravity="center"
+						android:text="Reload"
+						android:textColor="#fff"
+						android:textSize="13sp"
+						android:fontFamily="@font/dmsansmedium"
+						android:backgroundTint="#4B2B85"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						app:cornerRadius="70dp"
+						>
+
+					</Button>
+
+				</LinearLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:clipToPadding="false"
+					android:id="@+id/recyclerview1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingTop="130dp"
+					android:paddingBottom="90dp"
+					android:paddingLeft="10dp"
+					android:paddingRight="10dp"
+					android:scrollbars="none" />
+
+
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:paddingTop="0dp"
+				android:paddingBottom="90dp"
+				android:id="@+id/progress"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center_horizontal"
+				android:orientation="horizontal">
+				<ProgressBar
+
+
+					android:indeterminateDrawable="@drawable/progress"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:scaleX="0.8"
+					android:layout_gravity="bottom"
+					android:scaleY="0.8"
+					android:indeterminate="false"
+					style="?android:progressBarStyle" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<LinearLayout
+						android:id="@+id/bg"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:gravity="top"
+					android:orientation="vertical"
+					android:layout_gravity="center_vertical">
+
+
+					<LinearLayout
+						android:clipToPadding="true"
+						android:paddingTop="30dp"
+						android:alpha="0.85"
+						android:background="@color/bg_color"
+
+						android:orientation="vertical"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content">
+						<TextView
+							android:fontFamily="@font/dmsansbold"
+							android:id="@+id/textview1"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginTop="0dp"
+							android:layout_marginBottom="5dp"
+							android:layout_gravity="left"
+							android:paddingStart="8dp"
+							android:paddingTop="8dp"
+							android:text="Wallz Store"
+							android:textSize="30sp"
+							android:textStyle="bold"
+							android:textColor="#FFFFFF" />
+
+
+
+
+
+
+
+
+
+						<HorizontalScrollView
+							android:id="@+id/hscroll1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:padding="0dp"
+							android:scrollbars="none">
+							<LinearLayout
+								android:padding="8dp"
+								android:id="@+id/linear2"
+
+								android:layout_width="wrap_content"
+								android:layout_height="match_parent"
+								android:orientation="horizontal">
+
+								<TextView
+									android:id="@+id/drk"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginLeft="5dp"
+									android:padding="8dp"
+									android:text="Colors"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+android:layout_marginStart="50dp"
+									android:layout_marginEnd="4dp"
+
+									android:textColor="#E8E7E7"  />
+
+								<TextView
+									android:id="@+id/amo"
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:text="Amoled"
+									android:padding="8dp"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+
+								<TextView
+									android:id="@+id/Nature_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Nature"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+
+								<TextView
+									android:id="@+id/girls_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Cartoons"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+
+								<TextView
+									android:id="@+id/foo"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Cats"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+
+								<TextView
+									android:id="@+id/ani"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Animals"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+
+
+
+
+
+								<TextView
+									android:id="@+id/color_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Art"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+								<TextView
+									android:id="@+id/rad_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Aesthetic"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+								<TextView
+									android:id="@+id/car_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Cars"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+								<TextView
+									android:id="@+id/tech_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Dark"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+								<TextView
+									android:id="@+id/space_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Space"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+								<TextView
+									android:id="@+id/edu_"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:padding="8dp"
+									android:text="Coding"
+									android:textSize="16sp"
+									android:fontFamily="@font/dmsansmedium"
+									  android:layout_marginStart="3dp"
+									android:layout_marginEnd="4dp"
+									android:textColor="#E8E7E7"  />
+
+							</LinearLayout>
+						</HorizontalScrollView>
+					</LinearLayout>
+
+
+
+				</LinearLayout>
+			</LinearLayout>
+
+		</RelativeLayout>
+		
+
+	</LinearLayout>
+</LinearLayout>

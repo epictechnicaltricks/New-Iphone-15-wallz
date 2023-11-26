@@ -1,0 +1,111 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:background="@color/bg_color"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<!--Shimmer Effect-->
+		<com.facebook.shimmer.ShimmerFrameLayout
+			android:id="@+id/shimmer_view_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true">
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:paddingTop="90dp"
+			android:clipToPadding="false"
+
+			android:paddingBottom="90dp"
+			android:id="@+id/recyclerview2_shimmer"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			tools:listitem="@layout/wall_custom_layout"
+
+			android:scrollbars="none" />
+
+
+		</com.facebook.shimmer.ShimmerFrameLayout>
+
+		<androidx.recyclerview.widget.RecyclerView
+			android:paddingTop="90dp"
+			android:clipToPadding="false"
+
+			android:paddingBottom="90dp"
+			android:id="@+id/recyclerview1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			tools:listitem="@layout/wall_custom_layout"
+
+			android:scrollbars="none" />
+
+
+		<LinearLayout
+
+			android:orientation="vertical"
+			android:id="@+id/bg"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_horizontal"
+
+			android:layout_gravity="center_vertical">
+
+
+
+<LinearLayout
+	android:clipToPadding="true"
+	android:paddingTop="30dp"
+	android:background="@color/bg_color"
+	android:alpha="0.85"
+	android:gravity="center"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<TextView
+		android:layout_weight="1"
+		android:fontFamily="@font/dmsansbold"
+		android:id="@+id/title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="15dp"
+		android:layout_gravity="start"
+android:paddingTop="8dp"
+		android:paddingStart="8dp"
+		android:text="@string/title"
+		android:textSize="30sp"
+		android:textStyle="bold"
+		android:textColor="#FFFFFF" />
+
+	<ImageView
+		android:id="@+id/menu_"
+
+		android:layout_marginEnd="25dp"
+		android:src="@drawable/ic_baseline_menu_24"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent">
+
+	</ImageView>
+
+</LinearLayout>
+
+
+
+
+
+		</LinearLayout>
+
+
+	</RelativeLayout>
+
+
+</LinearLayout>

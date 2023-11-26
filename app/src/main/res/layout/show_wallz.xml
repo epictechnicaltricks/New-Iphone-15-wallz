@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/bg222"
+	android:layout_width="match_parent"
+	android:background="@color/bottom_navigation_color"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+	<RelativeLayout
+
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		<LinearLayout
+
+			android:id="@+id/wallz_img_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			<LinearLayout
+				android:visibility="gone"
+				android:id="@+id/wallz_progress"
+				android:gravity="center_horizontal|center_vertical"
+
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+
+				android:orientation="horizontal">
+				<ProgressBar
+
+
+
+					android:indeterminateDrawable="@drawable/progress"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:scaleX="0.8"
+					android:layout_gravity="center"
+					android:scaleY="0.8"
+					android:indeterminate="false"
+					style="?android:progressBarStyle" />
+
+			</LinearLayout>
+
+			<ImageView
+				android:src="@drawable/test"
+				android:id="@+id/wall_img"
+				android:scaleType="centerCrop"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+
+
+				/>
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/control_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:gravity="center_horizontal|bottom"
+			android:orientation="vertical">
+
+	<!--		<eightbitlab.com.blurview.BlurView
+				android:padding="8dp"
+
+				android:id="@+id/blurView"
+
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:blurOverlayColor="@color/colorOverlay">-->
+
+
+
+			<LinearLayout
+
+				android:layout_marginLeft="15dp"
+				android:layout_marginBottom="55dp"
+				android:layout_marginRight="15dp"
+				android:id="@+id/bg"
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:gravity="center_horizontal|center_vertical"
+				android:layout_height="wrap_content"
+
+				>
+				<ImageView
+					android:layout_marginTop="8dp"
+					android:background="@drawable/bg_black_shape"
+					android:onClick="share_Wallz"
+					android:id="@+id/wallz_share_"
+
+					android:src="@drawable/share_ic"
+					android:layout_width="43dp"
+					android:layout_height="43dp"
+
+					android:scaleType="centerInside" />
+
+				<ImageView
+					android:background="@drawable/bg_black_shape_padded"
+					android:onClick="set_Wallz"
+
+					android:layout_marginStart="45dp"
+					android:layout_marginRight="45dp"
+android:layout_marginBottom="0dp"
+					android:padding="10dp"
+					android:id="@+id/wallz_set_wall"
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:src="@drawable/tick"
+
+					android:tint="#fff"
+					android:scaleType="centerInside" />
+
+
+				<ImageView
+					android:background="@drawable/bg_black_shape"
+					android:onClick="download_Wallz"
+					android:id="@+id/wallz_download"
+
+					android:layout_marginTop="8dp"
+					android:src="@drawable/ic_download"
+					android:layout_width="43dp"
+					android:layout_height="43dp"
+
+					android:scaleType="centerInside" />
+
+
+			</LinearLayout>
+
+<!--			</eightbitlab.com.blurview.BlurView>-->
+		</LinearLayout>
+
+
+		<com.airbnb.lottie.LottieAnimationView
+			android:visibility="gone"
+			android:scaleX="1.1"
+
+			android:scaleY="1.1"
+			android:id="@+id/animationView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:lottie_rawRes="@raw/congo"
+			app:lottie_autoPlay="false"
+			app:lottie_loop="true"/>
+
+
+	</RelativeLayout>
+
+</LinearLayout>

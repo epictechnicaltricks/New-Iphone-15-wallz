@@ -1,0 +1,16 @@
+<resources>
+	<color	name="colorPrimary">#000000</color>
+	<color	name="colorPrimaryDark">#000000</color>
+	<color	name="colorAccent">#FFFFFF</color>
+	<color	name="colorControlHighlight">#0E0917</color>
+	<color	name="colorControlNormal">#3F51B5</color>
+	<color name="bottom_nav_color_active">#8A5BDF</color>
+	<color name="lite_text_color">#323131</color>
+	<color name="bottom_navigation_color">#ED000000</color>
+	<color name="bg_color">#000000</color>
+
+
+	<color name="colorOverlay">#94000000</color>
+
+
+</resources>

@@ -1,0 +1,65 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:background="@color/bg_color"
+	android:layout_height="match_parent"
+
+	android:orientation="vertical">
+
+	<RelativeLayout
+
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+	<!--	<androidx.viewpager.widget.ViewPager
+
+			android:id="@+id/viewpager1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>-->
+
+		<FrameLayout
+			android:id="@+id/frame_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+
+		<LinearLayout
+			android:gravity="bottom"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<eightbitlab.com.blurview.BlurView
+				android:paddingBottom="38dp"
+				android:id="@+id/blurView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:blurOverlayColor="@color/colorOverlay">
+
+				<!--Any child View here, TabLayout for example. This View will NOT be blurred -->
+				<com.google.android.material.bottomnavigation.BottomNavigationView
+
+					app:labelVisibilityMode="labeled"
+					android:id="@+id/bottomnavigation1"
+					android:layout_width="match_parent"
+					android:elevation="10dp"
+					app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+					app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+					android:hapticFeedbackEnabled="true"
+					app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+					app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+					android:layout_height="wrap_content"/>
+
+			</eightbitlab.com.blurview.BlurView>
+
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+
+
+</LinearLayout>
